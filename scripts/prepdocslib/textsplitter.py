@@ -21,9 +21,9 @@ class TextSplitter:
     def __init__(self, has_image_embeddings: bool, verbose: bool = False):
         self.sentence_endings = [".", "!", "?"]
         self.word_breaks = [",", ";", ":", " ", "(", ")", "[", "]", "{", "}", "\t", "\n"]
-        self.max_section_length = 1000
-        self.sentence_search_limit = 100
-        self.section_overlap = 100
+        self.max_section_length = 1500
+        self.sentence_search_limit = 200
+        self.section_overlap = 200
         self.verbose = verbose
         self.has_image_embeddings = has_image_embeddings
 
